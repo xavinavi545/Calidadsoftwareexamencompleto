@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Asignaciones</h1>
+<a href="{{ url_for('add_assignment') }}" class="btn btn-primary mb-3">Agregar Asignación</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Proyecto</th>
+            <th>Empleado</th>
+            <th>Fecha de Asignación</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for asignacion in asignaciones %}
+        <tr>
+            <td>{{ asignacion[1] }}</td>
+            <td>{{ asignacion[2] }}</td>
+            <td>{{ asignacion[3] }}</td>
+            <td>
+                <a href="{{ url_for('edit_assignment', id=asignacion[0]) }}" class="btn btn-warning btn-sm">Editar</a>
+                <form action="{{ url_for('delete_assignment', id=asignacion[0]) }}" method="post" style="display:inline;">
+                    <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Volver</a>
+{% endblock %}
+

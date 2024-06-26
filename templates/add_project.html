@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Agregar Proyecto</h1>
+<form method="POST" onsubmit="return validateDates()">
+    <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="descripcion">Descripción:</label>
+        <input type="text" name="descripcion" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="fecha_inicio">Fecha de Inicio:</label>
+        <input type="date" name="fecha_inicio" id="fecha_inicio" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="fecha_fin">Fecha de Fin:</label>
+        <input type="date" name="fecha_fin" id="fecha_fin" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+</form>
+<a href="{{ url_for('index') }}" class="btn btn-secondary mt-3">Volver</a>
+
+<script>
+    function validateDates() {
+        const fechaInicio = document.getElementById('fecha_inicio').value;
+        const fechaFin = document.getElementById('fecha_fin').value;
+        
+        if (fechaFin < fechaInicio) {
+            alert("La fecha de fin no puede ser menor que la fecha de inicio.");
+            return false;
+        }
+        return true;
+    }
+</script>
+{% endblock %}
+
+
