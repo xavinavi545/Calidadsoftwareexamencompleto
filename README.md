@@ -65,14 +65,14 @@ flask run
 ```
 ## Uso de la Aplicación
 1. Gestión de Proyectos
-Agregar Proyecto: Navega a la página de proyectos y haz clic en "Agregar Proyecto". Completa el formulario y asegúrate de que la fecha de fin no sea menor que la fecha de inicio.
-Editar Proyecto: Haz clic en "Editar" junto a un proyecto para modificar sus detalles. La validación de fechas también se aplica aquí.
-Eliminar Proyecto: Haz clic en "Eliminar" junto a un proyecto. Si el proyecto tiene asignaciones, verás una alerta indicando que no se puede eliminar.
+* Agregar Proyecto: Navega a la página de proyectos y haz clic en "Agregar Proyecto". Completa el formulario y asegúrate de que la fecha de fin no sea menor que la fecha de inicio.
+* Editar Proyecto: Haz clic en "Editar" junto a un proyecto para modificar sus detalles. La validación de fechas también se aplica aquí.
+* Eliminar Proyecto: Haz clic en "Eliminar" junto a un proyecto. Si el proyecto tiene asignaciones, verás una alerta indicando que no se puede eliminar.
 2. Gestión de Empleados
-Agregar Empleado: Navega a la página de empleados y haz clic en "Agregar Empleado". Completa el formulario con el nombre y el correo electrónico del empleado.
-Editar Empleado: Haz clic en "Editar" junto a un empleado para modificar sus detalles.
-Eliminar Empleado: Haz clic en "Eliminar" junto a un empleado. Si el empleado está asignado a un proyecto, verás una alerta indicando que no se puede eliminar.
+* Agregar Empleado: Navega a la página de empleados y haz clic en "Agregar Empleado". Completa el formulario con el nombre y el correo electrónico del empleado.
+* Editar Empleado: Haz clic en "Editar" junto a un empleado para modificar sus detalles.
+* Eliminar Empleado: Haz clic en "Eliminar" junto a un empleado. Si el empleado está asignado a un proyecto, verás una alerta indicando que no se puede eliminar.
 3. Gestión de Asignaciones
-Agregar Asignación: Navega a la página de asignaciones y haz clic en "Agregar Asignación". Selecciona un proyecto, un empleado y la fecha de asignación.
-Editar Asignación: Haz clic en "Editar" junto a una asignación para modificar sus detalles.
-Eliminar Asignación: Haz clic en "Eliminar" junto a una asignación para eliminarla.
+* Agregar Asignación: Navega a la página de asignaciones y haz clic en "Agregar Asignación". Selecciona un proyecto, un empleado y la fecha de asignación.
+* Editar Asignación: Haz clic en "Editar" junto a una asignación para modificar sus detalles.
+* Eliminar Asignación: Haz clic en "Eliminar" junto a una asignación para eliminarla.
